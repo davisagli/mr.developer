@@ -396,7 +396,7 @@ class CmdPony(Command):
 
     def __call__(self):
         options, args = self.parser.parse_args(sys.argv[2:])
-        pony = '''
+        pony = '''\x1b[35m
             .,,.
          ,;;*;;;;,
         .-'``;-');;.
@@ -414,7 +414,7 @@ class CmdPony(Command):
       ,;*;;;;\/   |.        /   /` | ';;;*;
        ;;;;;;/    |/       /   /__/   ';;;
        '*jgs/     |       /    |      ;*;
-            `""""`        `""""`     ;'
+            `""""`        `""""`     ;'\x1b[39m
 '''
         import time
         logger.info("Starting to develop a pony.")
